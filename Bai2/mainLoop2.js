@@ -5,10 +5,7 @@ document.getElementById("btnGo").onclick=function(event){
     var n=document.getElementById("inputN").value;
 
     //calculate
-    var sum=0;
-    for(let i=1;i<=n;i++){
-        sum+=Math.pow(x,i);
-    }
+    var sum=cal(parseInt(x),parseInt(n));
 
     //output
     var footer=document.getElementById("footer");
@@ -16,4 +13,11 @@ document.getElementById("btnGo").onclick=function(event){
     res.innerHTML=sum;
     
     footer.appendChild(res);
+}
+function cal(x,n){
+    var sum=0;
+    for(let i=1;i<=n;i++){
+        sum+=Math.pow(x,i);
+    }
+    return sum;
 }
