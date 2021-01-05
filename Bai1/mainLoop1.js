@@ -9,7 +9,7 @@ document.getElementById("btnGo").onclick=function(event){
     //output
     var footer=document.getElementById("footer");
     var res=document.createElement("div");    
-    res.innerHTML=i;
+    res.innerHTML=i-1;
     
     footer.appendChild(res);
 }
